@@ -12,18 +12,26 @@ public class Jogador {
 
     public Jogador(String nome) {
         this.nome = nome;
+        cartas = new Carta[7];
     }
 
     public void setCartas(Carta[] cartas) {
         this.cartas = cartas;
+     
     }
     
     public void mostrarCartas(){
+        
+        System.out.println("------    xxx    ------");
         System.out.println("CARTAS DE " + nome);
         
         for(Carta i: cartas){
-            i.toString();
+            System.out.println(i.toString());
         }
+    }
+
+    public String getNome() {
+        return nome;
     }
    
 }

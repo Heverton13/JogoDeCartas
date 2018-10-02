@@ -15,10 +15,10 @@ public class Jogo {
     
     public Jogo(){
         
-        Baralho b = new Baralho();
-        b.mostrarBaralho();
-        b.embaralhar();
-        b.mostrarBaralho();
+        baralho = new Baralho();
+        baralho.mostrarBaralho();
+        baralho.embaralhar();
+        baralho.mostrarBaralho();
         
         entrada = new Scanner(System.in);
         
@@ -40,10 +40,10 @@ public class Jogo {
     
     public void distribuirCartas(int qtd){
         
-        for (Jogador i : jogadores) {
-            
-           //i.setCartas(cartas[qtdCartas]);
-            
+        
+        for (int i = 0; i < jogadores.length; i++) {
+            jogadores[i].setCartas(baralho.distibruirCartas(qtd));
+          
         }
         
     }

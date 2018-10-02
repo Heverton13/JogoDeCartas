@@ -45,7 +45,8 @@ public class Baralho {
     
     public void embaralhar(){
         
-        System.out.println("");
+        System.out.println("\nEmbaralhando...\n");
+       
         for(int i = 0; i<cartas.length; i++){
             
             int num1 = aleatorio.nextInt(cartas.length);
@@ -59,19 +60,21 @@ public class Baralho {
         
     }
     
-    public Carta distibruirCartas(int qtdCartas){
+    public Carta[] distibruirCartas(int qtdCartas){
         
-        for (int i = 0; i < qtdCartas; i++) {
+        Carta[] ctdistribuida = new Carta[qtdCartas];
+        cont = 0;
+        for (int i = 0; i < ctdistribuida.length; i++) {
             
-            cartas[qtdCartas] = cartas[cont];
+            ctdistribuida[i] = cartas[cont];
             cont++;
             
         }
         
-        return cartas[qtdCartas];
+        return ctdistribuida;
     }
     
-    public void getCartas(){
-        //tirar dúvida sobre utilização desse método
+    public Carta[] getCartas(){
+        return cartas;
     }
 }
