@@ -30,7 +30,7 @@ public class Baralho {
                 cont++;
             }
         }
-        cont = 0;
+        cont = 0;// Zerando esse cont aqui para utilizar na distribuição de cartas.
     }
         
     public void mostrarBaralho(){
