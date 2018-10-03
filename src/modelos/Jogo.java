@@ -40,7 +40,7 @@ public class Jogo {
     
     public void distribuirCartas(int qtd){
         
-        
+        int indiceCarta = 0;
         for (int i = 0; i < jogadores.length; i++) {
             jogadores[i].setCartas(baralho.distibruirCartas(qtd));
           

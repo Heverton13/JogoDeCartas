@@ -21,7 +21,6 @@ public class Baralho {
         String[] naipes = {"Copas", "Espadas","Ouros","Paus"};
         
         cartas = new Carta[52];
-        cont = 0;
         aleatorio = new Random();
         
 
@@ -31,7 +30,7 @@ public class Baralho {
                 cont++;
             }
         }
-        
+        cont = 0;
     }
         
     public void mostrarBaralho(){
@@ -63,7 +62,7 @@ public class Baralho {
     public Carta[] distibruirCartas(int qtdCartas){
         
         Carta[] ctdistribuida = new Carta[qtdCartas];
-        cont = 0;
+        
         for (int i = 0; i < ctdistribuida.length; i++) {
             
             ctdistribuida[i] = cartas[cont];
